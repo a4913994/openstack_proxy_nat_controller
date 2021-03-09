@@ -57,9 +57,9 @@ with netns.NetNS(nsname=args.qrouter):
     		new_rule.add_match(match)
     		new_rule.target = iptc.Target(new_rule,"MASQUERADE") 
     		postrouting_chain.delete_rule(new_rule)
-		print('Success')
+		print('Remove successully server {}:{}').format(args.ip,args.vmport)
 	else:
-		print('Not Used')
+		print('Your vm port is not opened yet on this router')
 
 	
      
