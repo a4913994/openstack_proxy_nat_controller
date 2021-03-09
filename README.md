@@ -1,1 +1,0 @@
-# openstack_proxy_nat_controller
